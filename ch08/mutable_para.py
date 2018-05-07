@@ -30,7 +30,7 @@ class TwilightBus:
         if passengers is None:
             self.passengers = []
         else:
-            self.passengers = list(passengers)
+            self.passengers = list(passengers)#使用参数的副本
     
     def pick(self, name):
         self.passengers.append(name)
